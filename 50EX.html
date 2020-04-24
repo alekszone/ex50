@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+
+<!--
+
+        HTML EXERCISES
+
+        1) Create a title for the page
+        2) Create a heading
+        3) Create an ordered list
+        4) Create a table with 5 columns and 4 rows
+        5) Add an image for each second cell of the first row
+        6) Merge together 2 table cells
+        7) Add a link for every image
+        8) Divide the page using a horizontal line
+        9) Create a container with a nested paragraph and a nested unordered list
+        10) Create a footer with some information about the page creator 
+
+        CSS EXERCISES
+
+        11) Give a maximum width to the body and center it in the page
+        12) Set every h1 to be centered
+        13) Change the color of each link in the page
+        14) Create a class with a border
+        15) Set table to have rounded borders
+        16) Add margin between every paragraph
+        17) Create a class which change font size and boldness
+        18) Create a class to hide a content
+        19) Add a green border to each td
+        20) Add a dotted red border to each tr
+
+        JS EXERCISES
+
+        21) Given variable X = "John" and Y = "Doe", write on the console log "John <> Doe"
+        22) Create an object with properties such Name, Surname, Email
+        23) Delete Email from the previously created object
+        24) Create an array with 10 strings in it
+        25) Print in the console every string in the previous array
+        26) Create an array with 100 random numbers in it
+        27) Wrote a function to get the MAX and the MIN from the previously created array
+        28) Create an array of arrays, in which every array has 10 random numbers
+        29) Create a function that gets 2 arrays and returns the longest one
+        30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+
+        DOM 
+
+        31) Get element with ID "container" from the page
+        32) Get every "td" from the page
+        33) Create a cycle that prints the text inside every td of the page
+        34) Write a function to change the heading of the page
+        35) Write a function to add an extra row to the table
+        36) Write a function to add the class "test" to reach row in the table
+        37) Write a function to add a red background to every link in the page
+        38) Console log "Page loaded" when the page is correctly loaded
+        39) Write a function to add new items to a UL
+        40) Write a function to empty a list
+
+        EXTRA 
+
+        41) Add an eventListener to alert when the mouse is over a link, displaying the URL
+        42) Add a button to hide every image on the page
+        43) Add a button to hide and show the table from the page
+        44) Write a function to sum every number inside the TD (if the content is numeric)
+        45) Delete the last letter from the title each time the user clicks on it
+        46) Change the a single TD backgrund color when the user clicks on it
+        47) Add a button DELETE, on click it should delete a random TD from the page
+        48) Add a pink border to a cell when the mouse is over
+        49) Write a function to add a table with 4 rows and 3 lines programmatically
+        50) Write a function to remove the table from the page
+    -->
+<title>CHALLENGE EXERCISES </title>  
+  <head> 
+<style>
+ body {
+  width: 500px;
+  margin: auto;
+
+}
+table th, td{
+border: green 1px solid;
+}
+.tr{
+  border-width: 3px;
+  border-style: dotted;
+  border-color: red;
+}
+
+
+.h1{
+  margin: center;
+  text-align: center;
+  }
+
+a:link {
+  color: brown;
+  background-color:yellow;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: yellow;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: yellow;
+  text-decoration: underline;
+}
+#border {
+  border-radius: 10px ;
+  background: yellowgreen;
+  padding: 20px;
+  border-collapse: collapse;
+}
+p{
+  margin: 20px;
+}
+body{
+  font-size: large;  
+  font-weight: bold;
+
+}
+.hide{
+  visibility: hidden;
+}
+#container{
+  margin: center;
+  text-align: center;
+}
+
+
+</style>
+  </head>
+  <body>
+  <header> 
+    <h1 class="h1">MY WORK </h1> </header>
+<div>
+<ol>
+<li> one</li>
+<li> two </li>
+<li> three</li>
+<li> four</li>
+</ol>
+</div>
+<hr>
+<div>
+<table id="border" title="My Table"  style="width: 10%;">
+<tr class="tr" >
+  <th> nr </th>  <th> 
+    <a href="http://www.google.com" class="link"><img src="blue-wallpaper-27.jpg"  width="30" height="30px">1 </a>
+  
+    </th> <th> 2</th> <th>3</th> </tr>
+<tr class="tr"> <th>1</th> <td>
+  <a href="http://www.google.com" class="link" ><img src="blue-wallpaper-27.jpg" width="30px" height="30px">1</a>
+  </td> <td>2</td> <td>3</td> </tr>
+<tr class="tr"> <th>2</th> <td>
+  <a href="http://www.google.com" class="link"><img src="blue-wallpaper-27.jpg" width="30px" height="30px">2</a>
+</td> <td>4</td> <td>6</td> </tr>
+<tr class="tr"> <th>3</th> <td>
+  <a href="http://www.google.com" class="link"><img src="blue-wallpaper-27.jpg" width="30px" height="30px">3</a>
+  </td> <td rowspan="2">6</td> <td>9</td> </tr>
+<tr class="tr"> <th>4</th>  <td>
+  <a href="http://www.google.com" class="link"><img src="blue-wallpaper-27.jpg" width="30px" height="30px">4</a>
+  </td>  <td>12</td></tr>
+</table>
+</div>
+<div>
+  <h1 id="container">My First Heading</h1>
+<p>My first paragraph.<p>hello veryone </p> </p>
+<ul type="square"  id="container">
+  <li >Fruit
+    <ul type="disc">
+      <li>Bananas</li>
+      <li>Apples
+        <ul type="circle">
+          <li>Green</li>
+          <li>Red</li>
+        </ul>
+      </li>
+      <li>Pears</li>
+    </ul>
+  </li>
+  <li>Vegetables</li>
+  <li>Meat</li>
+</ul>
+</div>
+<footer>
+  <p>Posted by: Aleks</p>
+  <p>This is a page with exams for html,css,javascript and dom.</p>
+</footer>
+<script>
+//  31) Get element with ID "container" from the page
+//         32) Get every "td" from the page
+//         33) Create a cycle that prints the text inside every td of the page
+//         34) Write a function to change the heading of the page
+//         35) Write a function to add an extra row to the table
+//         36) Write a function to add the class "test" to reach row in the table
+//         37) Write a function to add a red background to every link in the page
+//         38) Console log "Page loaded" when the page is correctly loaded
+//         39) Write a function to add new items to a UL
+//         40) Write a function to empty a list
+//ex1
+let x=document.getElementById("#container");
+
+//ex2
+let y = document.querySelector("td");
+console.log(y)
+//ex3
+function b(){
+let m = document.querySelectorAll('td')
+      for(let i = 0; i<m.length; i++){
+          console.log(m[i].textContent)
+      }
+    }
+      //ex4
+function hello(){
+let name =document.querySelector(".h1");
+name.innerText="hello my document"
+}
+//ex5
+function table(){
+let node = document.createElement("tr"); 
+      var textnode = document.createTextNode("new row");
+      node.appendChild(textnode);  
+     let a= document.getElementById("border")
+a.appendChild(node);
+}
+//ex6
+function enter(){
+  let x = document.createElement("test");
+x.classList.add('test')
+let r = document.querySelector("table")
+x.appendChild(r)
+
+
+}
+
+//ex7
+function col(){
+  document.getElementById(".class").style.color = "#ff0000";
+}
+
+//ex8
+function al(){
+alert("Page loaded");
+}
+//ex9
+function ul (){
+  var no = document.createElement("li");                 
+var text = document.createTextNode("hello");         
+no.appendChild(text);                              
+document.getElementById("contanier").appendChild(no);
+
+}
+//ex10
+function rem(){
+  var list = document.getElementById("contanier");   
+list.removeChild(list.childNodes[i]);
+
+}
+
+
+</script>
+</body>
+</html>
